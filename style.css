@@ -1,0 +1,25 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-links {
+    display: flex;
+    gap: 24px;
+}
+
+.right-links {
+    display: flex;
+    gap: 24px;
+}
+
+.fa-brands {
+    width: 55px;
+    height: 55px;
+}
