@@ -13,9 +13,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 12px 14px;
+    justify-content: center;
+    padding: 8px 2px;
 }
 
 .header a{
@@ -26,6 +25,7 @@ body {
 .left-links {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 24px;
 }
 
@@ -50,7 +50,9 @@ body {
 .sec1 {
     background-color: #FFFFEA;
     display: flex;
-    padding: 60px 14px;
+    flex-wrap: wrap;
+    padding: 10px 14px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -63,8 +65,7 @@ span {
 }
 
 .grad {
-    width: 60%;
-    height: auto;
+    width: 100%;
 }
 
 .cv {
@@ -92,7 +93,34 @@ span {
     color: white;
 }
 
-.photo {
-    display: flex;
-    justify-content: center;
+@media only screen and (min-width: 768px) {
+
+    main {
+        width: 768px;
+        margin: auto;
+    }
+
+    .header {
+        width: 100%;
+        justify-content: space-between;
+        padding: 8px 20px;
+    } 
+
+    .left-links {
+        gap: 20px;
+    }
+
+    .right-links {
+        gap: 24px;
+    }
+
+    .sec1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .grad {
+        width: 400px;
+        height: auto;
+    }
 }
