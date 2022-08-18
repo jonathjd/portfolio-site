@@ -95,7 +95,7 @@ span {
 
 @media only screen and (min-width: 768px) {
 
-    main {
+    .wrapper {
         width: 768px;
         margin: auto;
     }
@@ -117,6 +117,35 @@ span {
     .sec1 {
         width: 100%;
         justify-content: center;
+    }
+
+    .grad {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .header {
+        width: 100%;
+        justify-content: space-between;
+        padding: 8px;
+    } 
+
+    .sec1 {
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 50px;
+
+    }
+
+    .about-intro {
+        width: 50%;
     }
 
     .grad {
