@@ -4,13 +4,24 @@ body {
 }
 
 .header {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ECF1FF;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 14px;
+}
+
+.header a{
+    text-decoration: none;
+    color: #1457FE;
+
 }
 
 .left-links {
     display: flex;
+    align-items: center;
     gap: 24px;
 }
 
@@ -19,7 +30,6 @@ body {
     gap: 24px;
 }
 
-.fa-brands {
-    width: 55px;
-    height: 55px;
+.head {
+    font-size: 24px;
 }
