@@ -32,6 +32,15 @@ body {
     gap: 24px;
 }
 
+.link, .logo {
+    border-radius: 12px;
+    transition-duration: 0.5s;
+}
+
+.link:hover, .logo:hover {
+    color: #FF4D4D;
+}
+
 .head {
     font-size: 24px;
 }
@@ -69,7 +78,7 @@ span {
 }
 
 .cv:hover {
-    background-color: #FF4D4D; /* Green */
+    background-color: #FF4D4D;
   }
 
 #resume{
