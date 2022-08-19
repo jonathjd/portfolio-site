@@ -1,5 +1,4 @@
 body {
-    width: 100%;
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
@@ -127,21 +126,18 @@ span {
 
 @media only screen and (min-width: 1000px) {
     .wrapper {
-        width: 1000px;
+        width: max-content;
         margin: auto;
     }
 
     .header {
-        width: 100%;
         justify-content: space-between;
         padding: 8px;
     } 
 
     .sec1 {
-        width: 100%;
         justify-content: space-evenly;
         gap: 50px;
-
     }
 
     .about-intro {
