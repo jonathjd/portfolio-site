@@ -3,6 +3,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.wrapper {
+    width: 100vw;
+}
+
 .header {
     top: 0;
     background-color: #ECF1FF;
@@ -12,18 +16,13 @@ body {
     align-items: center;
     justify-content: center;
     padding: 8px 2px;
+    gap: 24px;
+    position: sticky; top: 0;
 }
 
 .header a{
     text-decoration: none;
     color: #1457FE;
-}
-
-.left-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
 }
 
 .right-links {
@@ -33,7 +32,7 @@ body {
 
 .link, .logo {
     border-radius: 12px;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
 .link:hover, .logo:hover {
@@ -44,17 +43,44 @@ body {
     font-size: 24px;
 }
 
-.sec1 {
-    background-color: #FFFFEA;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px 14px;
-    gap: 10px;
-    align-items: center;
+section {
+    height: 100vh;
+    width: 100vw;
 }
 
-span {
+img {
+    align-self: baseline;
+}
+
+.about-container {
+    width: 100vw;
+    gap: 10px;
+    align-items: center;
+    scroll-snap-type: y mandatory;
+}
+
+.one {
+    background-color: #FFFFEA;
+    display: flex;
+    align-content: space-between;
+    gap: 40px;
+    padding: 10px 10px;
+}
+
+.two {
+    background-color: #A4DEFF;
+}
+
+.name {
     color: #FF4D4D ;
+}
+
+.role {
+    color: #1FC2FF;
+}
+
+.desc {
+    color: #1457FE;
 }
 
 .tech {
@@ -62,7 +88,9 @@ span {
 }
 
 .grad {
-    width: 100%;
+    width: 300px;
+    align-self: baseline;
+    height: auto;
 }
 
 .cv {
@@ -94,26 +122,25 @@ span {
 
     .wrapper {
         width: 768px;
-        margin: auto;
     }
 
     .header {
-        width: 100%;
-        justify-content: space-between;
+        width: 100vw;
+        justify-content: center;
         padding: 8px 20px;
     } 
-
-    .left-links {
-        gap: 20px;
-    }
 
     .right-links {
         gap: 24px;
     }
 
-    .sec1 {
-        width: 100%;
+    .about-container {
+        width: 100vw;
         justify-content: center;
+    }
+
+    .one {
+        padding: 20px 30px;
     }
 
     .grad {
@@ -124,29 +151,25 @@ span {
 
 @media only screen and (min-width: 1000px) {
     .wrapper {
-        width: 100%;
-        margin: auto;
+        width: 100vw;
     }
 
     .header {
-        justify-content: space-evenly;
         padding: 4px;
-        gap: 300px;
     } 
 
-    .sec1 {
-        width: 100%;
-        justify-content: space-evenly;
+    .about-container {
+        width: 100vw;
+        height: 100vh;
         gap: 10px;
-        padding: 70px 0px;
     }
 
-    .about-intro {
-        width: 50%;
+    .one {
+        padding: 40px 40px;
     }
 
     .grad {
-        width: 400px;
+        width: 600px;
         height: auto;
     }
 }
