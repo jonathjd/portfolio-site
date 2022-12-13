@@ -17,7 +17,6 @@ body {
     justify-content: center;
     padding: 8px 2px;
     gap: 24px;
-    position: sticky; top: 0;
 }
 
 .header a{
@@ -49,10 +48,6 @@ section {
     scroll-snap-align: start;
 }
 
-img {
-    align-self: baseline;
-}
-
 .about-container {
     width: 100vw;
     height: 100vh;
@@ -63,15 +58,13 @@ img {
 }
 
 .one {
+    height: 90vh;
     background-color: #FFFFEA;
     display: flex;
+    flex-direction: column;
     align-content: space-between;
-    gap: 40px;
+    gap: 20px;
     padding: 10px 10px;
-}
-
-.two {
-    background-color: #A4DEFF;
 }
 
 .name {
@@ -91,8 +84,8 @@ img {
 }
 
 .grad {
-    width: 300px;
-    align-self: baseline;
+    width: 220px;
+    align-self: center;
     height: auto;
 }
 
@@ -121,6 +114,37 @@ img {
     color: white;
 }
 
+.two {
+
+    background-color: #ECF1FF;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
+}
+
+.proj {
+    color: black;
+    background-color: #FFFFEA;
+    text-decoration: none;
+    border-radius: 60px;
+    padding: 50px 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+.three {
+    background-color: #f7ffa4;
+}
+
+.four {
+    background-color: #fca4ff;
+}
+
+.five {
+    background-color: #b5ffa4;
+}
+
 @media only screen and (min-width: 768px) {
 
     .wrapper {
@@ -144,6 +168,9 @@ img {
 
     .one {
         padding: 20px 30px;
+        gap: 20px;
+        align-items: center;
+        flex-direction: row;
     }
 
     .grad {
