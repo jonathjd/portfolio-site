@@ -115,7 +115,6 @@ section {
 }
 
 .two {
-
     background-color: #ECF1FF;
     display: flex;
     flex-wrap: wrap;
@@ -144,6 +143,16 @@ section {
 .five {
     background-color: #b5ffa4;
 }
+
+.proj-img {
+    display: none;
+}
+
+/* @media screen and (max-width:414px) {
+    .proj-img {
+        display: none;
+    }
+} */
 
 @media only screen and (min-width: 768px) {
 
@@ -176,6 +185,16 @@ section {
     .grad {
         width: 400px;
         height: auto;
+    }
+
+    .two {
+        justify-content: center;
+        gap: 30px;
+        padding: 50px 90px;
+    }
+
+    .proj {
+        padding: 100px 100px;
     }
 }
 
