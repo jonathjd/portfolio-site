@@ -17,6 +17,7 @@ body {
     justify-content: center;
     padding: 8px 2px;
     gap: 24px;
+    position:sticky relative;
 }
 
 .header a{
@@ -43,7 +44,7 @@ body {
 }
 
 section {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     scroll-snap-align: start;
 }
@@ -122,7 +123,7 @@ section {
     justify-content: center;
 }
 
-.proj {
+.proj-card {
     color: black;
     background-color: #FFFFEA;
     text-decoration: none;
@@ -132,27 +133,22 @@ section {
     border-radius: 20px;
 }
 
+.proj-cont {
+    padding: 50px 50px;
+}
+
+#hrv {
+    padding: 50px 20px;
+}
+
 .three {
-    background-color: #f7ffa4;
+    background-color: #FFFFEA;
 }
 
-.four {
-    background-color: #fca4ff;
+.grad-img {
+    display: flex;
+    justify-content: center;
 }
-
-.five {
-    background-color: #b5ffa4;
-}
-
-.proj-img {
-    display: none;
-}
-
-/* @media screen and (max-width:414px) {
-    .proj-img {
-        display: none;
-    }
-} */
 
 @media only screen and (min-width: 768px) {
 
@@ -193,7 +189,7 @@ section {
         padding: 50px 20px;
     }
 
-    .proj {
+    .proj-card {
         padding: 100px 100px;
     }
 }
