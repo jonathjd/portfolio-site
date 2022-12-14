@@ -85,9 +85,14 @@ section {
 }
 
 .grad {
-    width: 220px;
+    width: 200px;
     align-self: center;
     height: auto;
+}
+
+.grad-img {
+    display: flex;
+    justify-content: center;
 }
 
 .cv {
@@ -124,6 +129,8 @@ section {
 }
 
 .proj-card {
+    font-size: 18px;
+    font-weight: 600;
     color: black;
     background-color: #FFFFEA;
     text-decoration: none;
@@ -134,20 +141,56 @@ section {
 }
 
 .proj-cont {
-    padding: 50px 50px;
+    padding: 50px 40px;
 }
 
 #hrv {
-    padding: 50px 20px;
+    padding: 50px 10px;
 }
 
 .three {
     background-color: #FFFFEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+    gap: 75px;
 }
 
-.grad-img {
+.contact-head {
+    font-size: 36px;
+}
+
+.contact-text {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+hr {
+    border-width: 10px;
+    margin: 0px;
+    color: #ECF1FF;
+    margin-right: 90px;
+}
+
+.contact-form {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+input {
+    width: 80vw;
+}
+
+textarea {
+    width: 80vw;
+    height: 200px;
 }
 
 @media only screen and (min-width: 768px) {
