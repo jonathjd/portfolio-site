@@ -8,6 +8,7 @@ body {
 }
 
 .header {
+    width: 100vw;
     top: 0;
     background-color: #ECF1FF;
     font-size: 18px;
@@ -35,7 +36,7 @@ body {
     transition-duration: 0.3s;
 }
 
-.link:hover, .logo:hover {
+.link:hover, .logo:hover, .btn:hover {
     color: #FF4D4D;
 }
 
@@ -44,7 +45,7 @@ body {
 }
 
 section {
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
 }
@@ -59,13 +60,16 @@ section {
 }
 
 .one {
-    height: 90vh;
     background-color: #FFFFEA;
     display: flex;
     flex-direction: column;
     align-content: space-between;
     gap: 20px;
-    padding: 10px 10px;
+    padding: 10px 4px;
+}
+
+.intro {
+    padding: 0px 6px;
 }
 
 .name {
@@ -95,21 +99,21 @@ section {
     justify-content: center;
 }
 
-.cv {
+.btn {
     background-color: #ECF1FF;
+    color: #1457FE;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 500;
     padding: 2px 6px;
-    margin-left: 20px;
     border-radius: 12px;
     border-color: #1457FE;
     transition-duration: 0.3s;
 }
 
-.cv:hover {
-    background-color: #FF4D4D;
-  }
+.cv {
+    margin-left: 20px;
+}
 
 #resume{
     text-decoration: none;
@@ -184,13 +188,19 @@ h3 {
     font-size: 24px;
 }
 
-input {
+.form {
     width: 80vw;
+    font-family: 'Poppins', sans-serif;
 }
 
 textarea {
     width: 80vw;
     height: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-btn {
+    margin-top: 6px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -200,8 +210,6 @@ textarea {
     }
 
     .header {
-        width: 100vw;
-        justify-content: center;
         padding: 8px 20px;
     } 
 
@@ -235,6 +243,18 @@ textarea {
     .proj-card {
         padding: 100px 100px;
     }
+
+    #hrv {
+        padding: 90px 50px;
+    }
+
+    .three {
+        padding-left: 45px;
+    }
+    
+    textarea {
+        height: 40vh;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -247,8 +267,7 @@ textarea {
     } 
 
     .about-container {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
         gap: 10px;
     }
 
@@ -257,7 +276,15 @@ textarea {
     }
 
     .grad {
-        width: 600px;
+        width: 500px;
         height: auto;
+    }
+
+    #hrv {
+        padding: 100px 50px;
+    }
+
+    .btn {
+        padding: 6px 18px;
     }
 }
