@@ -54,7 +54,7 @@
                         <a href="https://github.com/jonathjd/Education-Project" class="proj-card">Education Analysis</a>
                     </div>
                     <div class="proj-cont">
-                        <a href="https://github.com/jonathjd/HRV-Calculator" class="proj-card" id="hrv">Heart Rate Variability Calculator</a>
+                        <a href="https://github.com/jonathjd/HRV-Calculator" class="proj-card" id="hrv">HRV Calculator</a>
                     </div>
                 </section>
                 <section class="three">
@@ -62,28 +62,29 @@
                         <h1 class="contact-text">Contact Me</h1>
                         <hr color="#ECF1FF">
                     </div>
-                    <div class="contact-form">
-                        <div class="form">
+                    <form class="contact-form" id="submission">
+                        <div class="form-cont">
                             <h3>Full name</h3>
-                            <input type="text" class="name">
+                            <input type="text" class="form" id="name" required>
                         </div>
-                        <div class="from">
+                        <div class="form-cont">
                             <h3>Email address</h3>
-                            <input type="text" class="email">
+                            <input type="email" class="form" id="email" required>
                         </div>
-                        <div class="form">
+                        <div class="form-cont">
                             <h3>Phone number</h3>
-                            <input type="text" class="phone">
+                            <input type="text" class="form" id="phone">
                         </div>
-                        <div class="form">
+                        <div class="form-cont" id="submit"s>
                             <h3>Message</h3>
-                            <textarea name="Message" id="" cols="30" rows="10"></textarea>
-                            <button class="btn contact-btn">Submit</button>
+                            <textarea name="Message" class="form" id="message" cols="30" rows="10"></textarea>
+                            <button type="submit" class="btn contact-btn">Send</button>
                         </div>
-                    </div>
+                    </form>
                 </section>
             </div>
         </div>
-        <script src="" async defer></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="app.js" async defer></script>
     </body>
 </html>
