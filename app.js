@@ -11,11 +11,11 @@ form.addEventListener('submit', function(event){
     Email.send({
         SecureToken : "adf24d22-6b13-45c4-b1d2-90d102cbf8e9",
         To : "jon.dickinson17@gmail.com",
-        From : `${email}`,
+        From : "jon.dickinson17@gmail.com",
         Subject : `Contact Form Inquiry from ${name}`,
-        Body :  `${name} with number ${phone} says: ${message}`
+        Body :  `${name} with number ${phone} and email ${email} says: ${message}`
     }).then(
-      message => alert(message)
+      message => alert("Thank you for reaching out, I will be in touch shortly!")
     );
 
 })
