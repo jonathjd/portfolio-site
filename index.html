@@ -30,31 +30,66 @@
             <div class="about-container">
                 <section class="one">
                     <div class="intro">
-                        <h1>Hi! My name is <span class="name">Jon</span>. Welcome to my website!</h1>
-                        <h3>I am a <span class="role">Bioinformatic Analyst</span> working for a proteomics company in the US. In my current role I-</h3>
+                        <h1 class="my-name">Hi! My name is <span class="name">Jon</span>. Welcome to my website!</h1>
+                        <h3 class="my-role">I am a <span class="role">Bioinformatician</span> working for a proteomics company in the US. In my current role I-</h3>
                         <ol class="tech">
                             <li><span class="desc">Analyze</span> highly dimensional <span class="desc">data</span> <i class="fa-solid fa-check"></i></li>
                             <li>Communicate proteomics to customers <i class="fa-solid fa-dna"></i></li>
                             <li><span class="desc">Create</span> web applications & <span class="desc">dashboards</span> <i class="fa-brands fa-python"></i></li>
                         </ol>
                         <button class="btn cv"><a href="img/Dickinson_Resume.pdf" id="resume">Resume</a></button>
+                        <div class="tech">
+                            <h3 class="about-title">About me</h3>
+                            <p class="about-me">Winter 2019 I graduated with my bachelors degree in <span class="desc">Biological Sciences from UC Irvine.</span>
+                                Spring of 2022 I graduated from <span class="name">Central Washington University</span> with a master's degree in <span class="name">Human Physiology</span>
+                                where I studied the transcriptome of aging human skeletal muscle and learned Python, SQL, and some C++ & Java.
+                            </p>
+                            <p class="about-me">
+                                Since then, I've learned HTML, CSS, Javascript, and a little bit about NoSQL databases such as Google Firestore.
+                                I've come to realize <span class="role">my interests lie at the intersection of human biology and computer science.</span> I enjoy building
+                                web applications and dashboards to analyze high-throughput omics data to increase biomarker discorvery
+                                and drug development.
+                            </p>
+                        </div>
                     </div>
                     <div class="grad-img">
                         <img src="img/grad-photo.jpeg" class="grad" alt="Dashing photo of Jon's 2019 graduation"></img>
                     </div>
                 </section>
                 <section class="two">
-                    <div class="proj-cont">
-                        <a href="https://www.youtube.com/watch?v=rgA2eIzdoNo&t=1551s" class="proj-card">Aging Transcriptome</a>
+                    <div class="proj-head" >
+                        <h1 class="my-name">Projects</h1>
+                        <p class="about-me proj-me">Listed below are some of the many technical projects I've worked on. The range of topics mirror my 
+                            various interests and wide skillset that I've developed over the years.
+                        </p>
                     </div>
-                    <div class="proj-cont">
-                        <a href="https://biomarker-somalogic.streamlit.app/" class="proj-card">Biomarker Overlap</a>
-                    </div>
-                    <div class="proj-cont">
-                        <a href="https://github.com/jonathjd/Education-Project" class="proj-card">Education Analysis</a>
-                    </div>
-                    <div class="proj-cont">
-                        <a href="https://github.com/jonathjd/HRV-Calculator" class="proj-card" id="hrv">HRV Calculator</a>
+                    <div class="proj-wrap">
+                        <div class="proj-cont">
+                            <a href="https://www.youtube.com/watch?v=rgA2eIzdoNo&t=1551s" class="proj-card">Aging Transcriptome</a>
+                            <p class="proj-desc">
+                                My master's thesis where I assessed the transcriptome of aging human skeletal muscle by analzing next-generation
+                                RNA-seq data.
+                            </p>
+                        </div>
+                        <div class="proj-cont">
+                            <a href="https://biomarker-somalogic.streamlit.app/" class="proj-card">Biomarker Overlap</a>
+                            <p class="proj-desc">
+                                Web application using streamlit to find overlapping biomarkers between gene ontology terms and
+                                SomaLogic 7k SomaScan assay.
+                            </p>
+                        </div>
+                        <div class="proj-cont">
+                            <a href="https://github.com/jonathjd/Education-Project" class="proj-card">Education Analysis</a>
+                            <p class="proj-desc">
+                                Dashboard created with Streamlit allowing the user to easily find tuition of all US universities.
+                            </p>
+                        </div>
+                        <div class="proj-cont">
+                            <a href="https://cwu-fitlab.streamlit.app/" class="proj-card">Fitlab</a>
+                            <p class="proj-desc">
+                                Full-stack CRUD web application with NoSQL database for CWU Health Science Department. 
+                            </p>
+                        </div>
                     </div>
                 </section>
                 <section class="three">
