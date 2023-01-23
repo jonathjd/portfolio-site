@@ -251,6 +251,12 @@ textarea {
     margin-top: 6px;
 }
 
+@media screen and (max-width: 540px) {
+    .grad-img {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 768px) {
 
     .wrapper {
